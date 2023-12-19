@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmarker</title>
+</head>
+<body>
+    <div class="home py-4 position-relative">
+        <div class="container d-flex align-items-center flex-column ">
+            <div class="homeTitel py-5">
+                <h1>Bookmarker</h1>
+                <div class="backColor"></div>
+            </div >
+           <div class="w-100">
+            <hr >
+           </div>
+            <h2 class="m-2"><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark"></i> </h2>
+
+             <div class="w-100 m-2">
+                
+            <label for="inputPassword5" class="form-label"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+            <input type="text" oninput="validationNameInput()" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            
+             </div>
+
+            <div class="w-100 m-2">
+                <label for="input5" class="form-label"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+             <input oninput="validationUrlInput()" type="text" id="input5" class="form-control" aria-describedby="passwordHelpBlock">
+            </div>
+
+             <button  onclick="addSite()"  type="button" id="modalerror" class="btn1 m-3">Submit</button>
+
+             <div class="w-100">
+                <hr >
+               </div>
+
+               <table class="table mt-4 text-center bg-light">
+                <thead >
+                    <tr >
+                    <th>Index</th>
+                    <th>Website</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                    </tr>
+                    
+                </thead>
+                <tbody id="tableData">
+                    <!-- <tr>
+                        <td>50</td>
+                        <td>800888</td>
+                        <td> <a target="_blank" href=""><button class="btn btn-visit"><i class="fa-solid fa-eye pe-2"> </i> </button></a></td>
+                        <td> <button class="btn btn-visit"><i class="fa-solid fa-eye pe-2"> </i> <a target="_blank"  href=""></a></button></td>
+                        <td><button onclick="deletsite(`+i+`)" class="btn btn-delete"><i class="fa-solid fa-trash-can"> </i> Delete</button></td>
+                    </tr> -->
+                </tbody>
+               </table>
+
+               
+
+        </div>
+        <div id="modelValid" class="backModel position-absolute start-0 top-0 w-100 h-100 d-none justify-content-center align-items-center">
+            <div class="modelConent bg-white p-4 rounded-2 shadow-lg">
+              <header class="modelHeader w-100 d-flex justify-content-between align-items-center mb-4">
+                <div class="circles d-flex">
+                  <span class="c1 rounded-circle me-2"></span>
+                  <span class="c2 rounded-circle me-2"></span>
+                  <span class="c3 rounded-circle me-2"></span>
+                </div>
+                <button class="btn border-0" id="close">
+                  <i class="fa-solid fa-xmark close fs-3"></i>
+                </button>
+              </header>
+              <p class="m-0 pb-2 fw-bolder fs-5">
+                Site Name or Url is not valid, Please follow the rules below :
+              </p>
+            
+             <div>
+                <span class="fw-light fs-6 " ><i class="fa-regular fa-circle-right p-2"></i>Site name must
+                    contain at least 3 characters</span>
+             </div>
+              <div>
+                <span class="fw-light fs-6 " ><i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+                    valid one</span>
+              </div>
+            </div>
+          </div>
+    </div>
+
+   
+      <!--  -->
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

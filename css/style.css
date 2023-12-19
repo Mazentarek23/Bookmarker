@@ -1,0 +1,90 @@
+::selection{
+    background-color: rgb(254, 194, 96);
+}
+
+.home{
+    background-color: rgb(247, 236, 222);
+}
+.home .backColor{
+  background-color: rgb(254, 194, 96);
+ 
+}
+.home h1{
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  isolation: isolate;
+}
+.home h2{
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+
+
+
+
+.home .btn1{
+  background-color:rgb(209, 81, 45);
+  color: white;
+  padding-left: 20;
+  padding-right: 20;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100px;
+  
+}
+.home .btn1:hover{
+  background-color:rgb(187, 65, 32);
+  color: white;
+}
+
+tbody .btn-visit{
+ background-color:  rgb(158, 178, 59);
+}
+tbody .btn-delete{
+  background-color: rgb(235, 29, 54);
+}
+tbody .btn-visit:hover{
+ background-color:  rgb(140, 160, 39);
+}
+tbody .btn-delete:hover{
+  background-color: rgb(184, 14, 34);
+}
+
+
+
+
+.circles span{
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+
+ .c1{
+  background-color: #f15f5d;
+}
+ .c2{
+  background-color: #febe2e;
+}
+ .c3{
+  background-color: #4db748
+}
+
+
+.backModel {
+  background-color: #0007;
+}
+.modelConent {
+  width: 500px;
+  z-index: 100;
+}
+.modelconent button{
+  text-transform: none;
+}
